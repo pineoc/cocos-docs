@@ -99,7 +99,7 @@ Now open your WebStorm and there will be a new directory in the previous Project
 
 ![newnavigator](res/newnavigator.png)
 
-Right click the **index.html** in WebStorm and choose **Debug 'index.html(1)'**. It will open your Chrome automatically and you have successfully setted up a new project. Cheers! The browser address is 
+Right click the **index.html** in WebStorm and choose **Debug 'index.html(1)'**. It will open your Chrome automatically and you have successfully set up a new project. Cheers! The browser address is 
 
 ```
 http://localhost:63342/Cocos2d-html5/Parkour/index.html.

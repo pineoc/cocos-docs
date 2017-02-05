@@ -32,13 +32,13 @@ function MainScene:touchEndEvent(x,y)
     local item = self:itemOfPoint(ccp(x,y))
     if (item) then
         if (item:isActive()) then
-            -- 1. clean actived items, remove from array, explosion animation, score animation.
+            -- 1. clean activated items, remove from array, explosion animation, score animation.
             self:removeActivedItems();
             -- 2. reform metrix
             self:dropItems();
             -- 3. check for gameover logic.
         else
-            -- 1. clean old actived items
+            -- 1. clean old activated items
             self:inactiveItems();
             -- 2. active Neighbor all items
             self:activeNeighborItems(item);

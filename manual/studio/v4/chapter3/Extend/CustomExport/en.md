@@ -13,7 +13,7 @@ Interface Description:
 
         string Label { get; }
 	
-		// or in verison 2.3.3, the second parameter is GameFile gameFile
+		// or in version 2.3.3, the second parameter is GameFile gameFile
         string Serialize(PublishInfo info, IProjectFile projFile);
 
         void ContextInitialize(PublishInfo publishInfo);

@@ -44,7 +44,7 @@ var callback = function (code, response) {}
 
 ```javascript
 {
-    "error_message": "Unkown error"
+    "error_message": "Unknown error"
 }
 ```
 

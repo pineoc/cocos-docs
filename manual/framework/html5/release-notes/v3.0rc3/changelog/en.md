@@ -23,7 +23,7 @@ Cocos2d-JS-v3.0 RC3 @ Aug.29, 2014
 * [JSB] Combine SpiderMonkey's arm64&32 lib to support Xcode 6.0 
 * [JSB] Added abort function for XMLHttpRequest.
 * [JSB] Used clang as the default compiler for Android compilation.
-* [JSB] Made cc.place, cc.moveTo, cc.moveBy, cc.jumpTo, cc.jumpBy support x, y seperated position parameters.
+* [JSB] Made cc.place, cc.moveTo, cc.moveBy, cc.jumpTo, cc.jumpBy support x, y separated position parameters.
 * [JSB] Added setSpeed/getSpeed functions for cc.ActionInterval.
 * [JSB] Made cc.easeBezierAction accept multiple parameters.
 * [JSB] Refactored ccui.TextField's `setText` to `setString`, `getStringValue` to `getString`.

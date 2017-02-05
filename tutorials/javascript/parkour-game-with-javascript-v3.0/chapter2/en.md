@@ -16,7 +16,7 @@ The directory structure can be separated into three parts:
 
 * **frameworks** directory: hosts the Cocos2d-html5 engine and the Cocos2d-x JavaScript Bindings.
     * **Cocos2d-html5** directory: holds all the engine modules of Cocos2d-html5, such as engine core modules, audio module, external physics library, CocosBuilder Reader, CocoStudio Reader and other modules. All of the modules are implemented in JS and can be run on the web.
-    * **js-bindings** directory: hosts the Cocos2d-x engine, project files of bindings and the external prebuilt SpiderMonkey library. The exported API is writen in JS, and the base modules are implemented in C++. They can be run on native platforms such as iOS, android, Mac, win32 and so on.
+    * **js-bindings** directory: hosts the Cocos2d-x engine, project files of bindings and the external prebuilt SpiderMonkey library. The exported API is written in JS, and the base modules are implemented in C++. They can be run on native platforms such as iOS, android, Mac, win32 and so on.
 
 #### Part 2: tests, sample games and templates
 

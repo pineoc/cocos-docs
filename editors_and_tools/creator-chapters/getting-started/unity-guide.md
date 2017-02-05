@@ -52,7 +52,7 @@ this.node.scale.y *= 1.5;
 
 ## Coordinate system
 
-`position`, `rotation` and `scale` in cc.Node are both in the local coordinate system. As for Unity3D, its `Postion`,
+`position`, `rotation` and `scale` in cc.Node are both in the local coordinate system. As for Unity3D, its `Position`,
 `Rotation` is in the world coordinate system.
 
 In Cocos Creator, if you want to calculate the world coordinate of cc.Node, you can use the following method:

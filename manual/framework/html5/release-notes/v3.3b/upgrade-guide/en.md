@@ -23,7 +23,7 @@ Again, please be noted that this new API **only** support JSON files, if you are
     
 2. Return value
 
-    The return value is an object which is composed of two properties: `node` and `action`. `node` value is absolutly included in the result, but depends on the project itself, `action` may be `null` in the result when no action is presented in the project. When the parser process failed, the result will be:
+    The return value is an object which is composed of two properties: `node` and `action`. `node` value is absolutely included in the result, but depends on the project itself, `action` may be `null` in the result when no action is presented in the project. When the parser process failed, the result will be:
     
     ```
     {node: null, action: null}

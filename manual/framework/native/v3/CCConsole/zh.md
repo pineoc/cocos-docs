@@ -36,7 +36,7 @@ $ cd NEW_PROJECTS_DIR/MyGame
 
 ```
 IvenYangtekiMacBook-Pro-2:Documents zeroyang$ cocos new ConsoleTest -p com.your_company.ConsoleTest -l cpp 
-Runing command: new
+Running command: new
 > Copy template into /Users/zeroyang/Documents/ConsoleTest
 > Copying cocos2d-x files...
 > Rename project name from 'HelloCpp' to 'ConsoleTest'

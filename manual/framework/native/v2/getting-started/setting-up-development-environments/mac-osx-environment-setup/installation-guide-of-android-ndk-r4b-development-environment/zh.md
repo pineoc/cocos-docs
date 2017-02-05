@@ -22,7 +22,7 @@
 3. android sdk安装. 到Android.同eclipse一样，只需要解压到合适目录.同时需要将该目录下的tools路径加到PATH中.编辑~/.bash_profile, 添加：PATH=${PATH}:/{your-android-sdk}/tools.
 4. 安装Android Developer Tools. 打开Eclipse，点击Help菜单，找到Install New Sofeware，在Add Site中添加一个location为：[http://dl-ssl.google.com/android/eclipse/](http://dl-ssl.google.com/android/eclipse/)，然后会出现Android DDMS,和Android Development Tools，选择并Install.重启之后可以选择”Eclipse->偏好设置”,然后选择Android项来指定Android SDK的安装目录.如下图所示.    
 ![](./res/andriod_EN.jpg)     
-5. 开启terminal,使用"android list targets"发现没有可以sdk target.需要在eclipse的window菜单里面打开 Android SDK And AVD Manager窗口，找到avilable packages，选中相关的packages.如下图所示.   
+5. 开启terminal,使用"android list targets"发现没有可以sdk target.需要在eclipse的window菜单里面打开 Android SDK And AVD Manager窗口，找到available packages，选中相关的packages.如下图所示.   
 ![](./res/andriod_EN2.jpg)    
 6:等待下载.完成之后可以在Install packages中找到自己已经安装的包.如下图所示.     
 ![](./res/andriod_EN3.jpg)     

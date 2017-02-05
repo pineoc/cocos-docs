@@ -34,7 +34,7 @@ So the `methodName` should be `callNativeUIWithTitle:addContent:` which is the d
  	+(NSString *)callNativeWithReturnString;
 ```
 
-##Useage
+##Usage
 
 - In JS code, for invoking the native method `callNativeUIWithTitle:andContent:` of `NativeOcClass`, we can use `jsb.reflection.callStaticMethod` API like this:
 

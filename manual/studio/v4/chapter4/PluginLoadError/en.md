@@ -1,6 +1,6 @@
 # How to: Run Previous Versions of Addins in cocos #
 
-If plugin interfaces change bewteen versions, previous versions of addins cannot run in higher versions of cocos. To solve this problem, follow the steps below: 
+If plugin interfaces change between versions, previous versions of addins cannot run in higher versions of cocos. To solve this problem, follow the steps below: 
 
 Open Samples of latest versions, which is in **%userprofile%\Documents\Cocos\CocosStudio2\Samples\Addins** (taking the default installation directory on Windows as an example).
 

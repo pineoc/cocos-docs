@@ -118,7 +118,7 @@ Here's a simple package document description:
 
 Explanations:
 
- - `name` String - defines the package name; the package name is unique in the set, which is associated with the name you used to login on the offical website server
+ - `name` String - defines the package name; the package name is unique in the set, which is associated with the name you used to login on the official website server
  - `version` String - version number. [semver](http://semver.org/) format is recommended to manage your package version
  - `description` String (optional) - describe what the package does with one line
  - `author` String (optional) - package author

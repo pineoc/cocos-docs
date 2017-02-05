@@ -138,7 +138,7 @@ Thus our preparation work has been done. let's wrap the end and call these metho
     },
 ```
 **Note**
-You should initilize the space of physics and pass it to AnimationLayer.
+You should initialize the space of physics and pass it to AnimationLayer.
 
 ### Add Physics Component to the Runner Sprite
 

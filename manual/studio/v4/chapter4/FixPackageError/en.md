@@ -126,7 +126,7 @@ P.S. there is bug in v3.6 BOX2D- TEST. Solution: [https://github.com/cocos2d/coc
 
 Solution: [http://www.cocoachina.com/bbs/read.php?tid-296022.html](http://www.cocoachina.com/bbs/read.php?tid-296022.html)
 
-15 Black screen on mobile device when runing cocos2d-x 2.X + R9d with c++11 regular expressoins and APK packaged correctly. 
+15 Black screen on mobile device when running cocos2d-x 2.X + R9d with c++11 regular expressoins and APK packaged correctly. 
 
 Cause: Successful compilation on PC means that there is IDE libraries support C++ features (new library files from C++11). On mobile device, GCC 4.9+ supports the C++  `regex`, but GCC 4.9 is available for NDK 10+. 
 

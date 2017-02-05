@@ -70,7 +70,7 @@ You can also set background image as you like:
 
 ![uipanel_background1](res/uipanel_background1.png)
 
-As shown above, we setted the size and background image, but remember call `setClippingEnabled` method to clip by size, you'll see following if you forget call the method:
+As shown above, we set the size and background image, but remember call `setClippingEnabled` method to clip by size, you'll see following if you forget call the method:
 
 ![uipanel_background2](res/uipanel_background2.png)
 

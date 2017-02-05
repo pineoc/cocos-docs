@@ -23,7 +23,7 @@ in __Android Studio__. __Android Studio__ will do everything required. You can r
 
 ## Installing new SDK versions and build tools
 * use the built in __SDK Manager__ to install the __SDK versions__ and __build tools__
-that you are targetting.
+that you are targeting.
 
     ![](Android-Studio-img/toolbar_sdkmanager_1.png "")
 

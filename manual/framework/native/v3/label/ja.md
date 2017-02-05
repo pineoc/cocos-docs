@@ -165,7 +165,7 @@ FNTファイルには対応する画像の名前,文字に対応するunicode,�
 	auto lineWidth = label4->getMaxLineWidth();
 	CCLOG("lineWidth: %.2f", lineWidth);
 	auto s = label4->getStringLenght();
-	CCLOG("string lenght:%.2f", s);
+	CCLOG("string length:%.2f", s);
 	label4->setScale(2.0f);							//Changes both X and Y scale factor of the label4
 	label4->setColor(Color3B::GREEN);				//Changes the color
 	label4->setOpacity(127);						//Changes the opacity. 

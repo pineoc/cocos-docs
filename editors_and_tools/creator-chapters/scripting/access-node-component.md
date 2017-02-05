@@ -154,7 +154,7 @@ But if you need to dynamically get other objects in runtime, you need to search 
 
 ### Find child node
 
-Sometimes there will be many objects with the same type in game scene, such as turret, enemy and effects, they can be uniformly managed by a global script. If we use **Properties** panel to associate them with the script one by one, that will be a heavy workload. It is often better to manage these objects by making them all children of one parent node, then retreive all children via the parent node:
+Sometimes there will be many objects with the same type in game scene, such as turret, enemy and effects, they can be uniformly managed by a global script. If we use **Properties** panel to associate them with the script one by one, that will be a heavy workload. It is often better to manage these objects by making them all children of one parent node, then retrieve all children via the parent node:
 
 ```js
 // CannonManager.js
@@ -259,7 +259,7 @@ module.exports = {
 };
 ```
 
-You can use `require` + filename(without paths) everywhere to retreive the object exported by "export" from other scripts.
+You can use `require` + filename(without paths) everywhere to retrieve the object exported by "export" from other scripts.
 
 ```js
 // Back.js

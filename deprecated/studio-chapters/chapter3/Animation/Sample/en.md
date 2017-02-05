@@ -32,7 +32,7 @@ Follow the steps below build a skeletal animation.
 
 	![image](../../../studio-img/Animation/Sample/20.png)
 
-	Build seperate animations for legs, arms and tails.
+	Build separate animations for legs, arms and tails.
 
 	![image](../../../studio-img/Animation/Sample/21.png)
 
@@ -40,4 +40,4 @@ Follow the steps below build a skeletal animation.
 
  	![image](../../../studio-img/Animation/Sample/22.gif)
 
-You can change the apperance or color of bones by replacing them with new skin. Editing the apperance will not change the animation.
+You can change the appearance or color of bones by replacing them with new skin. Editing the appearance will not change the animation.

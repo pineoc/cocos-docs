@@ -135,7 +135,7 @@ fnt文件中包含了对应图片的名字(图片包含了所有你要绘制的�
 	auto lineWidth = label4->getMaxLineWidth();
 	CCLOG("lineWidth: %.2f", lineWidth);
 	auto s = label4->getStringLenght();
-	CCLOG("string lenght:%.2f", s);
+	CCLOG("string length:%.2f", s);
 	label4->setScale(2.0f);	//设置缩放比例
 	label4->setColor(Color3B::GREEN);				//设置label4的文字颜色
 	label4->setOpacity(127);						//设置label4的文字不透明度

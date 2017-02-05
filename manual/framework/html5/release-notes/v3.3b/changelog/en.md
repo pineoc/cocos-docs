@@ -43,7 +43,7 @@ Cocos2d-JS v3.3 Beta @ Jan.24, 2015
     26. [JSB] Fixed `LayoutParameter`'s `setMargin` function's API inconsistence with web engine.
     27. [JSB] Fixed `ccui.Button`'s constructor issue.
     28. [JSB] Fixed `ccui.Button`'s `setNormalizedPosition` function's API inconsistence with web engine.
-    29. [JSB] Fixed `ccui.CheckBox`'s intialization issue.
+    29. [JSB] Fixed `ccui.CheckBox`'s initialization issue.
     30. [JSB] Fixed `ccui.ImageView`'s constructor issue.
     31. [JSB] Fixed JSON parse issue in `XMLHTTPRequest`.
     32. [JSB] Fixed a wired compilation issue which reports `JSVAL_TO_IMPL` is not a function on win32.

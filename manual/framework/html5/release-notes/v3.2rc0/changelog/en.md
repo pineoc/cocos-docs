@@ -26,7 +26,7 @@ Cocos2d-JS v3.2 RC0 @ Dec.11, 2014
 	6. Fixed an issue of `cc.ParticleSystem` that it can't change its texture mode and shape type in Canvas mode.
 	7. Fixed an issue of `cc.Layer`'s bake function that its position is incorrect when cc.view's scale isn't 1.
 	8. Fixed an issue of `ccs.ArmatureAnimation`'s `setMovementEventCallFunc` and `setFrameEventCallFunc`.
-	9. Fixed an issue of `console.log` that it isn't a funtion on IE9.
+	9. Fixed an issue of `console.log` that it isn't a function on IE9.
 	10. Fixed an issue of `CSLoader` that it will add duplicate resources to sprite frame cache.
 	11. Fixed an issue of `cc.ProgressTimer` that its setColor is not taking effect. 
 	12. Fixed an issue of `cc.loader` that it will throw an error when loading a remote texture.

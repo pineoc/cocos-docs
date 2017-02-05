@@ -27,7 +27,7 @@ In this way, the third party module can be contained in your game automatically,
 ## Cautions
 
 1. **Only supports pure JavaScript modules**：npm contains varied modules, many of them use the API of Node.js which can not be referenced by the component because the ultimate operating environment of the component is a browser which does not have Node.js to support.
-2. **Native environments do not support DOM API**：as everyone knows, browsers contain a mass of DOM API. jQuery is one famous DOM operation library. Although modules using these API can operate in the HTML5 environment, they cannot operate in the native environment. This is because the native enviroment does not contain the web layout engine providing DOM API.
+2. **Native environments do not support DOM API**：as everyone knows, browsers contain a mass of DOM API. jQuery is one famous DOM operation library. Although modules using these API can operate in the HTML5 environment, they cannot operate in the native environment. This is because the native environment does not contain the web layout engine providing DOM API.
 
 ## Other probable module dependence patterns in the future
 

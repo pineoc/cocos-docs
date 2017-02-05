@@ -154,7 +154,7 @@ In the `frameworks/runtime-src/` folder, you can find project files for some pla
 - Android
     
     1. Execute the command `cocos compile -p android -m release --ndk-mode release` to create an apk file of your project.
-    2. If the compilation succeded, you can find the apk file in the `publish` folder. You can use the jarsigner tool to sign the apk with your own Android key store, detailed steps can be found in [Google's official documentation](http://developer.android.com/tools/publishing/app-signing.html)。
+    2. If the compilation succeeded, you can find the apk file in the `publish` folder. You can use the jarsigner tool to sign the apk with your own Android key store, detailed steps can be found in [Google's official documentation](http://developer.android.com/tools/publishing/app-signing.html)。
 
 ###6.2 Web platform publishing
 

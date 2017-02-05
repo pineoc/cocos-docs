@@ -79,7 +79,7 @@ void MySprite::addEvents()
             return true; // to indicate that we have consumed it.
         }
 
-        return false; // we did not consume this event, pass thru.
+        return false; // we did not consume this event, pass through.
     };
 
     listener->onTouchEnded = [=](cocos2d::Touch* touch, cocos2d::Event* event)
