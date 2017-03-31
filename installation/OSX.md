@@ -3,18 +3,35 @@
 ## Prerequisites
 * A supported environment. See **[Installation Prerequisites](A/index.html)**
 
-* Cocos2d-x v3.x [http://cocos2d-x.org/download](http://cocos2d-x.org/download)
-
 ## Setting up Cocos2d-x
-* Download Cocos2d-x and unzip it. (maybe: ~/)
+You can get started with __Cocos2d-x__ by either downloading a self-contained 
+__.zip__ from the [website](http://cocos2d-x.org/download) or by cloning our 
+[GitHub Repo](https://github.com/cocos2d/cocos2d-x). Pick what works for you.
+__There is no need to do both.__
 
-    ![](OSX-img/unzip.png "")
+### By downloading a .zip archive
+* Download Cocos2d-x and unzip it. (maybe: __~/__ or __~/Projects__ )
 
-    ![](OSX-img/unzipping.png "")
+    ![](iOS-img/unzip.png "")
 
-* Make sure you have a working environment see __Prerequisites__ above. This means
-a working __Python__, having run __<cocos2d-x root>/setup.py>__, updated your
-__$PATH__ and run __source ~/.bash_profile__.
+    ![](iOS-img/unzipping.png "")
+
+### Cloning from GitHub
+Use the following commands to clone our GitHub repo and get your environment setup.
+If you are not familar with GitHub's workflow, [learn it](https://guides.github.com/activities/hello-world/) or download 
+using the step above, __By downloading a .zip archive__.
+
+```sh
+cd <to where you want to clone this repo>
+
+git clone git@github.com:cocos2d/cocos2d-x.git
+
+git submodule update --init
+
+git submodule update
+
+./download-deps.py
+```
 
 ## Build and Run
 * In __<cocos2d-x root>/build__, open __cocos2d_tests.xcodeproj__
@@ -22,7 +39,7 @@ __$PATH__ and run __source ~/.bash_profile__.
 * Click __run__ to compile and run __cpp-tests__
 
 ## Running on an IOS Device
-* In order to run on IOS Device an IOS Developer Program membership is needed.
+In order to run on IOS Device an IOS Developer Program membership is needed.
 You can purchase one from Apple: [https://developer.apple.com/programs/ios/](https://developer.apple.com/programs/ios/).
 The steps to run on iOS device are the same as running in a simulator except you
 select you device from the device list.

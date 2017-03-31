@@ -54,7 +54,7 @@
   <a href="api-ref/index.html">
     <img src="static-pages/api-ref.png" align="middle" />
     <h3>API Reference</h3>
-    <p class="center">Both C++ and JavaScript.</p>
+    <p class="center">C++, JavaScript, Lua and Creator.</p>
   </a>
 </div>
 

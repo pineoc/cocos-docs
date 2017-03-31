@@ -43,8 +43,8 @@ You can clone the [__GitHub Repo__](https://github.com/cocos2d/cocos2d-x) and fo
 * `auto` is used for creating local variables.
 * `using namespace cocos2d;` is used to shorten types.
 * each chapter has [__a compilable source code sample__](https://github.com/chukong/programmers-guide-samples) to  demonstrate concepts.
-* class names, methods names and other API components are rendered using fixed fonts. eg: `Sprite`
-* *italics* are used to notate concepts and keywords
+* class names, methods names and other API components are rendered using fixed fonts. eg: `Sprite`.
+* *italics* are used to notate concepts and keywords.
 
 ## Learning Resources
 * This very guide! You can also get it as a [__PDF__ ](http://cocos2d-x.org/docs/ProgrammersGuide.pdf) and [__ePub__](http://cocos2d-x.org/docs/ProgrammersGuide.epub)

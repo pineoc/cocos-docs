@@ -5,6 +5,9 @@ print
 static-pages/api-refs/
 *.tar.gz
 
+# VSCode
+.vscode/
+
 # output formats we don't want to store in GitHub
 *.epub
 *.pdf

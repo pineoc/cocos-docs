@@ -260,6 +260,7 @@ Here are a few tools:
 * [ShoeBox](http://renderhjs.net/shoebox/)
 * [Texture Packer](https://www.codeandweb.com/texturepacker)
 * [Zwoptex](https://www.zwopple.com/zwoptex/)
+* [Sprite Sheet Packer](http://amakaseev.github.io/sprite-sheet-packer/)
 
 ## Sprite Manipulation
 After creating a `Sprite` you will have access to a variety of properties it

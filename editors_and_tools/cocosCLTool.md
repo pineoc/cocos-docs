@@ -109,6 +109,17 @@ which allow you to fine tune targeting specific SDK versions, signing code, lua
 options as well as web specific options. You can run __cocos compile --help__ to see
 all available options broken down by platform.
 
+### Android compiling could require specifying an API level.
+If you are compiling for Android, the __cocos__ command is flexible and allows developers
+to compile using specific Android API versions. You may have __Android-22__ installed on 
+your system (or any other version). You will want to add __--ap android-api-version__ to 
+the end of the __cocos__ command to specify. Example:
+```sh
+cocos compile -p android --ap android-22
+```
+You can always check `project.properties` to see what api-version is being targetted. For 
+more info, please read out [Release Notes](https://github.com/cocos2d/cocos2d-x/blob/v3/docs/RELEASE_NOTES.md#cocos-command-modification).
+
 ## Running a project
 Once you have created a project you can run it right from the command-line. __cocos__
 takes care of launching the environment you specify. The command is formatted as:
@@ -182,32 +193,49 @@ platform.
 Cocos2d-x is available to use as both source code and pre-built libraries. Using
 the source allows developers to see __under the hood__ what the engine is doing.
 Using the source increases compilation time. To decrease compilation time, by a
-great deal, you can create __pre-built__ libraries from the source. These are static
-libraries you can add to your project to use Cocos2d-x. Compiling the __pre-built__
+great deal, you can create __pre-built__  (or __static__) libraries from the source. These are static
+libraries you can add to your project to use Cocos2d-x. This is the same as saying: "I won't touch the 
+engine, just build on top if it". Compiling the __pre-built__
 libraries with the __cocos__ tool is easy. Examples:
 ```sh
 # remove the 'prebuilt' folder
 # without the -m flag, this builds for release mode
 # generates libraries for every platform
+cocos gen-templates
 cocos gen-libs -c
 
 # remove the 'prebuilt' folder
 # without the -m flag, this builds for release mode
 # generates libraries for just ios
+cocos gen-templates
 cocos gen-libs -c -p ios
 
 # remove the 'prebuilt' folder
 # without the -m flag, this builds for release mode
 # generates libraries for just ios and android
+cocos gen-templates
 cocos gen-libs -c -p ios -p android
 
 # remove the 'prebuilt' folder
 # with the -m flag, this builds for debug
 # generates libraries for just ios and android
+cocos gen-templates
 cocos gen-libs -c -p ios -m debug
 ```
 
 You can run __cocos gen-libs --help__ to see all available options broken down by platform.
+
+## Using the pre-built libraries in your projects.
+Once you have built the pre-built libraries, you can tell `cocos` to use them when creating a 
+new project. You may have heard developers refer to using __static libraries__. This is exactly 
+what you have created by running the __cocos gen-libs__ command above. Doing this you have told the
+compilation process that __these files don't need to be compiled again, just use them__. Using 
+__static libraries__ will speed up your compilation time. To create a new project and have it use
+__static libraries__ rather than the __raw engine source__ you specify the `-t binary` flag to your `cocos new ...`
+command. Example:
+```sh 
+cocos new ProjectName -p projectname.com.name -l cpp -t binary
+```
 
 ## Installing additional plugins
 Using the __Cocos Package Manager__ you can easily add additional functionality to your games,
@@ -265,7 +293,8 @@ __cocos__ has a number of unique options you can use to help build your games. T
 
 | Command| Description|
 | ----|----|
+|__no-apk__| compile without building an apk. |
 |__luacompile__| Encrypt the lua scripts in your game. This is invoked once `cocos compile` is invoked with the `-m release` argument. Developers can invoke this manually for encrypting their scripts.|
 |__jscompile__| Encrypt the JavaScript scripts in your game. This is invoked once `cocos compile` is invoked with the `-m release` argument. Developers can invoke this manually for encrypting their scripts.|
-| __gen-simulator__| The simulator powers the  __preview__ function in Cocos Creator. |
-| __gen-templates__| is used for generating the binary templates you can use to get started on a project that uses the __pre-built libraries__. Binary templates are required by Cocos Bundle package and also Cocos Creator.|
+|__gen-simulator__| The simulator powers the  __preview__ function in Cocos Creator. |
+|__gen-templates__| is used for generating the binary templates you can use to get started on a project that uses the __pre-built libraries__. Binary templates are required by Cocos Bundle package and also Cocos Creator.

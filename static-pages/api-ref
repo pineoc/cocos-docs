@@ -20,11 +20,13 @@
 <p><a href="../api-ref/js/v3x/">v3.x JavaScript</a></p>
 <p><a href="../api-ref/js/V2.2.3/">v2.2.3 JavaScript</a></p>
 <br />
-<p><a href="../api-ref/creator/v1.2/">v1.2 Cocos Creator</a></p>
+<p><a href="../api-ref/creator/v1.3/">v1.3 Cocos Creator</a></p>
 </div>
 <br />
 <div>
 <h4>Legacy Versions</h4>
+<p><a href="../api-ref/cplusplus/V3.14/">v3.13 C++</a></p>
+<p><a href="../api-ref/cplusplus/V3.13/">v3.13 C++</a></p>
 <p><a href="../api-ref/cplusplus/V3.12/">v3.12 C++</a></p>
 <p><a href="../api-ref/cplusplus/V3.11/">v3.11 C++</a></p>
 <p><a href="../api-ref/cplusplus/V3.10/">v3.10 C++</a></p>
@@ -42,6 +44,8 @@
 <p><a href="../api-ref/cplusplus/V2.2.1/">v2.2.1 C++</a></p>
 <p><a href="../api-ref/cplusplus/V2.2/">v2.2 C++</a></p>
 <br />
+<p><a href="../api-ref/js/V3.14/">v3.14 JavaScript</a></p>
+<p><a href="../api-ref/js/V3.13/">v3.13 JavaScript</a></p>
 <p><a href="../api-ref/js/V3.12/">v3.12 JavaScript</a></p>
 <p><a href="../api-ref/js/V3.11/">v3.11 JavaScript</a></p>
 <p><a href="../api-ref/js/V3.10/">v3.10 JavaScript</a></p>
@@ -56,6 +60,7 @@
 <p><a href="../api-ref/js/V2.2.1/">v2.2.1 JavaScript</a></p>
 <p><a href="../api-ref/js/V2.2/">v2.2 JavaScript</a></p>
 <br />
+<p><a href="../api-ref/creator/v1.3/">v1.3 Cocos Creator</a></p>
 <p><a href="../api-ref/creator/v1.2/">v1.2 Cocos Creator</a></p>
 <p><a href="../api-ref/creator/v1.1.2/">v1.1.2 Cocos Creator</a></p>
 <p><a href="../api-ref/creator/v1.1.1/">v1.1.1 Cocos Creator</a></p>

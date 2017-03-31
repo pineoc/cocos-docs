@@ -500,6 +500,14 @@ A few examples of using a __rect query__ while doing a *logo smash*:
 
 ![](physics-img/rectQuery2.gif)
 
+#### Debugging Physics Body and Shapes
+If you ever wish to have red boxes drawn around your __physics bodies__ to aid
+in debugging, simple add these 2 lines to your core, where it makes sense to you.
+Perhaps `AppDelegate` is a good place. 
+```cpp
+Director::getInstance()->getRunningScene()->getPhysics3DWorld()->setDebugDrawEnable(true);
+Director::getInstance()->getRunningScene()->setPhysics3DDebugCamera(cameraObjecct);
+```
 
 #### Disabling Physics
 Using the built-in __physics engine__ is a good idea. It is solid and advanced.

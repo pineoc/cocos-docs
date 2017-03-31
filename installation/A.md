@@ -84,3 +84,6 @@
 * OS X v10.6+ for Mac games
 * Windows 7+ for Win games
 * Modern browsers and IE 9+ for web games
+
+## Revision history
+* 1/2/2017 - slackmoehrle - reviews while comparing to README for each tagged release.

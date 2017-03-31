@@ -3,7 +3,7 @@
 ## Prerequisites
 * Complete steps in **[Android Command-Line Installation and Setup](Android-terminal/index.html)**
 
-* Eclipse ADT Bundle [http://developer.android.com/sdk/index.html](http://developer.android.com/sdk/index.html)
+* Eclipse ADT Bundle [http://www.eclipse.org/downloads/](http://www.eclipse.org/downloads/)
 
 ## Open the proj.android project with Eclipse.
 
