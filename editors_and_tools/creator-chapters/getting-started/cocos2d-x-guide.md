@@ -1,4 +1,5 @@
 # Cocos2d-x User Guide
+
 Cocos Creator is a new type of game development tool oriented towards content creation that has completely integrated the componentized edition Cocos2d-x WEB, by which you can launch games on platforms like Web, iOS, Android, Mac, Windows, etc.. Moreover, you can use it to directly launch games on Cocos Play platform, grasping the new opportunity brought by the rapid development of the channel for mobile web games. For more introductions to Cocos Creator, please refer to [Introduction](introduction.md).
 
 The aim of this document is to introduce the users of Cocos2d-x to Cocos Creator and help them learn how to use the new editor as soon as possible.
@@ -12,7 +13,7 @@ For new Cocos Creator users, some of the following typical misconceptions may oc
 2. __Building an entire code framework at first and then add in game contents__：Cocos Creator's workflows are content creation oriented, which is very convenient for prototype creation. You can create scenes and write logic code directly into the editor, then you can drive the game scene and run it. The following data driven chapters will introduce changes of workflows in detail
 3. __Directly check the API of Cocos2d-JS when coding__：Cocos Creator has said to be originated from Cocos2d-JS. Their APIs have the same origin and have lots of identical parts. But with entirely new componentized frameworks, their APIs are different and not compatible with each other
 4. __Hoping to directly run the old Cocos2d-JS games on Cocos Creator__：Their APIs are not 100% compatible; therefore, such operation is unavailable.
-5. __Extend functions by way of inheritance__：In Cocos2d-JS, inheritance is a basic method for extending node functions. But in Cocos Creator, inheriting and extending nodes is not recommended. The node is only an entity. The logic of the game should be realized by different components and then be assembled in the node.
+5. __Extend functions by way of inheritance_：In Cocos2d-JS, inheritance is a basic method for extending node functions. But in Cocos Creator, inheriting and extending nodes is not recommended. The node is only an entity. The logic of the game should be realized by different components and then be assembled in the node.
 
 The reason for mentioning these misconceptions at the beginning of this document is that we hope developers can realize that the workflows and development ideas provided by Cocos Creator are tremendously different from those of Cocos2d-x.
 For a better understanding of how to code correctly in Cocos Creator, the following two chapters will introduce the changes in workflows and API level brought by data driven in more detail.
@@ -26,7 +27,7 @@ In the framework of Cocos Creator, all the scenes will be serialized as pure dat
 
 Why do we call Cocos2d-x a code driven development method? For instance, suppose that there is a character in the scene, who will walk around continuously in one area, then we will code as follows:
 
-```javascript
+```
 var role = new cc.Sprite('role.png');
 scene.addChild(role);
 role.setPosition(100, 100);
@@ -34,11 +35,11 @@ var walk = cc.sequence(cc.moveBy(5, 100, 0), cc.moveBy(5, -100, 0)).repeatForeve
 role.runAction(walk);
 ```
 
-In this code, scene relationship, position information, action section and animation information of __role__ are all realized by code; therefore it's called code driven. There also are some developers who store data information in other documents, but they still have to realize the parser of data themselves. Even when using some traditional editors, parsers are also needed to parse the data exported from editors into scenes.
+In this code, scene relationship, position information, action section and animation information of "role" are all realized by code; therefore it's called code driven. There also are some developers who store data information in other documents, but they still have to realize the parser of data themselves. Even when using some traditional editors, parsers are also needed to parse the data exported from editors into scenes.
 
 But what Cocos Creator provides is a more thorough data driven method. All the information edited in the editor will be serialized into data documents. When running, the engine will directly transform the data into object by deserialization. This procedure is fundamentally different from the procedure described above: the category property in the engines can be directly serialized or deserialized. You don't need to transform it by any mapping relation. Scene graph, position property and animation, etc. in the above example can all be serialized by the editor into data. When loading scenes, no data is needed, developers only need to deserialize the whole scene from scene data:
 
-```javascript
+```
 cc.director.loadScene('SampleScene');
 ```
 
@@ -48,7 +49,7 @@ Serialization and deserialization supports most public properties in Cocos Creat
 
 What's more, the power of data driven lies in the fact that components edited by users themselves can also make property declarations. These properties can be edited in editor, saved in scene data, and finally deserialized into game scenes when running.
 
-_The source database is presented as [Assets](../basics/editor-panels/assets.md) in the editor._
+_The source database is presented as [Assets](basics/editor-panels/assets.md) in the editor._
 
 ### Understanding workflows of Cocos Creator from the angle of data driven
 
@@ -66,13 +67,13 @@ In Cocos2d-JS, the Render device will traverse the scene's node tree to generate
 
 The most essential difference is: What the logic tree concerns is game logic but not render relation.
 
-Th logic tree will generate the scene's render tree and decide rendering order. But developers don't need to worry about these, they only need to make sure the correctness of the displaying effect in editor. In [Hierarchy](../basics/editor-panels/hierarchy.md) of editor, developers can adjust the order and parent-child relationship of the logic tree.
+Th logic tree will generate the scene's render tree and decide rendering order. But developers don't need to worry about these, they only need to make sure the correctness of the displaying effect in editor. In [Node Tree](basics/editor-panels/node-tree.md) of editor, developers can adjust the order and parent-child relationship of the logic tree.
 
 ### Scene Management
 
 In Cocos2d-JS, after building scenes with code, developers can switch scenes by 'cc.director.runScene'. In Cocos Creator, when developers have finished building scenes in editor, all the data will be saved as a 'scene-name.fire' document and then be stored in Asset Database. Developers can load a scene resource by using `cc.director.loadScene`. Please refer to the following concrete example:
 
-```javascript
+```
 var sceneName = 'scene-name';
 var onLaunched = function () {
     console.log('Scene ' + sceneName + ' launched');
@@ -83,7 +84,7 @@ cc.director.loadScene(sceneName, onLaunched);
 
 Besides, interface for visiting scene nodes is provided:
 
-```javascript
+```
 // To obtain scene nodes of logic tree
 var logicScene = cc.director.getScene();
 ```
@@ -96,9 +97,9 @@ There used to be a crude mechanism of components. Developers could receive callb
 
 And this leads to the biggst difference between Cocos2d-JS and Cocos Creator: How to extend node behavior?
 
-In Cocos2d-JS, developers can extend Nodes. Cocos Creator does not allow this. All the extensions should be done by adding components. In a componentized framework like Cocos Creator, composition is the preferred extension method.
+In Cocos2d-JS, developers can realize behavior extensions for various types of nodes. But in Cocos Creator, such operation is forbidden. All the extensions should be realized by adding components. The contest between inheritance and assembly is long-standing, which will not be discussed in detail here. But in componentized framework like Cocos Creator, assembly is the most natural extension method.
 
-For more information on the component system, please refer to chapters like [Node Component](../content-workflow/node-component.md) and [Components](../components/index.md), etc..
+For more information on the component system, please refer to chapters like [Node Component](../content-workflow/node-component.md).
 
 ### Coordinate System and Anchor Point
 
@@ -122,7 +123,7 @@ In Cocos Creator, we preserved the behaviors of lots of important categories and
 - `cc.sys`
 - `cc.visibleRect`
 - [scripting actions](../scripting/actions.md)
-- Some types of render nodes: Menu and MenuItem,ClippingNode,ProgressTimer,MotionStreak,ParallaxNode,RenderTexture,DrawNode,relative categories of Tile map, etc.
+- Some types of render nodes: Menu and MenuItem,ClippingNode,ProgressTimer,MotionStreak,RenderTexture,DrawNode,relative categories of Tile map, etc.
 - Chipmunk physics engine and PhysicsDebugNode
 - Types of basic data
 

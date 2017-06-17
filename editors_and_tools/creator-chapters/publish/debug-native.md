@@ -30,6 +30,20 @@ Now you should be able to debug your JSB program on native platform. If anything
 
 For more detail information about VS Code debugging features, please read [VS Code Debugging Guide](https://code.visualstudio.com/docs/editor/debugging).
 
+### Windows socket connect error
+
+Launch debugger on Windows may get the following error in VS Code Debug console:
+
+`ar: attachRequest: retry socket.connect`
+
+Here's a possible solution: click the gear button in Debug view, and update `launch.json` to change the value of `address` to:
+
+`"address": "::1"`
+
+Due to some unknown reason on Windows some debug connection will try to use IPv6 first. So we need to fillin the local machine IP address in IPv6 format.
+
+
+
 ## Debug Built Native Project
 
 Once you build the project for iOS, Android, Windows or Mac, you can debug these native projects with VS Code. Open the project in VS Code, usually the path is:

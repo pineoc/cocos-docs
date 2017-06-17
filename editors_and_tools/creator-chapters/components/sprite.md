@@ -4,7 +4,7 @@ Using Sprites is the most common way to display images in a 2D game. By adding t
 
 ![add sprite](sprite/sprite_component.png)
 
-Click the **Add Component** button at the bottom of the **Inspector** and select `Sprite` from `Add Rendering Component` to add the Sprite component to the node.
+Click the **Add Component** button at the bottom of the **Properties** panel and select `Sprite` from `Add Rendering Component` to add the Sprite component to the node.
 
 ## Sprite attribute
 
@@ -17,7 +17,7 @@ Click the **Add Component** button at the bottom of the **Inspector** and select
 
 ## Detailed explanation
 
-After adding the Sprite component, drag the Texture or SpriteFrame type resource from the **resource manager** to the `Sprite Frame` attribute reference. The resource image can then be displayed through the Sprite component.
+After adding the Sprite component, drag the Texture or SpriteFrame type resource from the **Assets** to the `Sprite Frame` attribute reference. The resource image can then be displayed through the Sprite component.
 
 If this SpriteFrame resource is contained within an Atlas resource, then the `Atlas` attribute of the Sprite will be set up along with it. Later you can click the **choose** button next to the `Atlas` attribute to choose another SpriteFrame from this Atlas to assign to the Sprite.
 

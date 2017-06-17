@@ -56,7 +56,7 @@ to reproduce with conventional rendering techniques. Some realistic examples
 might include highly chaotic systems, natural phenomena, or processes caused by
 chemical reactions. Here are a few examples of __particle effects__:
 
-![](other_node_types-img/particle1.png "snow") ![](2-img/smallSpacer.png "") ![](other_node_types-img/particle3.png "sun")
+![](other_node_types-img/particle1.png "snow") ![](basic_concepts-img/smallSpacer.png "") ![](other_node_types-img/particle3.png "sun")
 
 ### Tools for creating Particle Effects
 Even though you can always create _particle effects_ by hand, massaging each

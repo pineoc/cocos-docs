@@ -14,6 +14,28 @@ You can drag files from another window in the operating system to the **assets**
 ## Importing and synchronizing assets
 The assets in **assets** and the project asset files seen in the file manager are synchronised. Moving, renaming and deleting assets in **assets** will do the same alterations to the asset files in the user's file system. Likewise, reopening or activating the Cocos Creator program after adding or deleting assets in the file system (such as Explorer in Windows or Finder in Mac OS)  will update the assets in **assets**.
 
+## Managing Asset Meta Files
+
+When importing any asset files in `assets` folder a **Meta file** will be generated for each asset, with the same filename at the same location. This meta file contains the universal unique identity (uuid) of the asset, and other important settings such as trim information for textures. 
+
+When managing assets in Cocos Creator, meta files are hidden and will be handled automatically. That means when deleting, renaming, moving assets their corresponding meta files will be deleted, renamed, moved accordingly.
+
+**If you try to manage your assets in OS file system such as Explorer and Finder, you are responsible for updating meta files manually**, such as deleting, renaming and moving, to make sure the uuid stay the same and no asset reference lost. Remember, meta files should be at the same location of their assets, and with the same filename as their assets.
+
+### Handling Unmatched Asset Meta
+
+Warning: Unmatched asset meta found
+
+If you move or rename asset file in Explorer or Finder without moving or renaming the meta files accordingly, the Editor will consider the moved or renamed asset as newly imported thus creating new meta files with new uuid. Also the old meta files will have no matched asset and be removed. It will also cause missing reference to the asset (including scripts) in scenes and prefabs.
+
+When that happens the Editor will pop up a dialog to warn the user:
+
+(screenshot)
+
+Any unmatched meta files will be removed from `assets` folder, and will be backed up to `temp` folder. 
+
+If you wish to recover the reference to those changed assets, please put the backup meta file to the same folder as the changed asset, and make sure to rename the meta file to share the same name as the changed asset. Please notice that there're probably new meta files generated for changed assets, you can delete those newly created meta files safely after you recover the backup meta files.
+
 ## Common asset workflow
 Next, we will introduce Cocos Creator's main asset types and the related workflows:
 
@@ -24,6 +46,7 @@ Next, we will introduce Cocos Creator's main asset types and the related workflo
 - [Particle asset](particle.md)
 - [Audio asset](audio-asset.md)
 - [Prefab](prefab.md)
+- [Spine](spine.md)
 
 ---
 

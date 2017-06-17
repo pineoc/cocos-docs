@@ -47,7 +47,7 @@ exitScript() {
 }
 
 exitScriptAfterStaging() {
-  echo "staging version of the guide at: slackmoehrle.github.io"
+  echo "staging version of the guide at: cocos2d.github.io"
   exitScript
 }
 
@@ -63,8 +63,8 @@ exitScriptNotEnoughParameters() {
 
 deployToGitHub() { ## deploy docs to GitHub Pages
   echo "deploying to GitHub Pages..."
-  rsync -ah site/ ../slackmoehrle.github.io
-  cd ../slackmoehrle.github.io
+  rsync -ah site/ ../cocos2d.github.io
+  cd ../cocos2d.github.io
   git add .
   git commit -m 'published automatically from cocos-docs build script'
   git push
@@ -314,7 +314,7 @@ buildMarkdown() {
 
 buildProgrammersGuidePrint() {
   ## create HTML docs from the markdown files in the above array
-  echo "prepping Programmers Guide print versions..."
+  #echo "prepping Programmers Guide print versions..."
   echo "building Programmers Guide print versions..."
   mkdir -p print
 
@@ -428,7 +428,7 @@ fetchLegacyAPIRef() {
   ## This downloads the legacy api-ref and puts it where it needs to go.
   echo "downloading the legacy api-refs to deploy...."
   cd static-pages/
-  #wget http://cocos2d-x.org/docs/api-refs.tar.gz
+  wget http://cocos2d-x.org/docs/api-refs.tar.gz
   tar xvf api-refs.tar.gz
   cd ..
 

@@ -1,6 +1,8 @@
-# System built-in events
+# Node System Events
 
-As stated in the last file, `cc.Node` has a whole set of [event listener and dispatch mechanisms](./events.md). Based on this mechanism, we will provide some basic system events. This file will introduce how to use these events.
+As stated in the last file, `cc.Node` has a whole set of [event listener and dispatch mechanisms](./events.md). Based on this mechanism, we provide some basic system events. This file will introduce the system events related to Node hierarchy.
+
+Cocos Creator supports four types of system events: mouse, touch, keyboard, device motion. This document will mainly discuss the usage of touch and mouse events which is dispatched by related `cc.Node`. For keyboard and device motion events, they are dispatched as [Global System Events](./player-controls.md) by `cc.systemEvent`.
 
 System events follow the general register method, developers can register event listener not only by using the enumeration type but also by using the event name directly, the definition for the event name follows DOM event standards.
 
@@ -13,7 +15,7 @@ node.on(cc.Node.EventType.MOUSE_DOWN, function (event) {
 node.on('mousedown', function (event) {
   console.log('Mouse down');
 }, this);
-``` 
+```
 
 ## Mouse event type and event object
 
@@ -30,7 +32,7 @@ The Mouse event will only be triggered on desktop platforms, the event types the
 
 The important APIs of mouse events（`cc.Event.EventMouse`）are as follows（`cc.Event` standard events API excluded）：
 
-| function name | returned value type | meaning |
+| fuction name | returned value type | meaning |
 | ------ |:-------:|:----:|
 | `getScrollY` | `Number` | get the y axis distance wheel scrolled, effective only when scrolling  |
 | `getLocation` | `Object` | get mouse location object which includes x and y properties |
@@ -61,16 +63,16 @@ Note, touch events support multi-touch, each touch spot will send one event to t
 | function name | return value type | meaning |
 | ------ |:-------:|:----:|
 | `getID` | `Number` | identification ID of the touch spot, can be used in multi-touch to track the touch spot |
-| `getLocation` | `Object` | get location object of the touch spot which includes x and y properties |
+| `getLocation` | `Object` | get location object of the touch spot which includes x and y propertites |
 | `getLocationX` | `Number` | get X axis location of the touch spot |
 | `getLocationY` | `Number` | get Y axis location of the touch spot |
 | `getDelta` | `Object` | get the distance object the touch spot moves since the last event, which includes x and y properties |
 | `getStartLocation` | `Object` | get the location object the where touch spot gets down which includes x and y properties |
 | `getPreviousLocation` | `Object` | get the location object of the touch spot at the last event which includes x and y properties |
 
-## Mouse and touch event bubbles
+## Touch event bubbles
 
-Mouse and touch events all support the event bubbles on the node tree, take the pictures below as an example:
+touch events support the event bubbles on the node tree, take the pictures below as an example:
 
 ![propagation](./internal-events/propagation.png)
 
@@ -78,9 +80,9 @@ In the scene shown in the picture, node A has a child node B which has a child n
 
 When the mouse or finger presses in the node C region, the event will be triggered at node C first and notify the registered event listener at node C. Node C will notify node B of this event, and the logic in node B will check whether the touch spot is in its region. If the answer is yes, it will notify its listener, otherwise, it will do nothing. Node A will receive the event then, since node C is completely in node A, the event listener registered in node A will receive the touch down event. The above process explains the event bubble process and that the logic decides whether to dispatch the event or not based on the node region.
 
-Except for the node region to decide whether to dispatch the event or not, the bubble process of mouse and touch events is no different than the general events. So, the function `stopPropagation` to call `event` of `stopPropagation` can stop the bubbling process actively.
+Except for the node region to decide whether to dispatch the event or not, the bubble process of touch events is no different than the general events. So, the fuction`stopPropagation` to call `event` of `stopPropagation` can stop the bubbling process actively.
 
-## Other events of `cc.Node` 
+## Other events of `cc.Node`
 
 | enumeration object definition | corresponding event name | event trigger timing |
 | ---------- |:----------:|:-----------:|
@@ -89,5 +91,3 @@ Except for the node region to decide whether to dispatch the event or not, the b
 | null | 'scale-changed' | when the scale property is changed |
 | null | 'size-changed' | when the size property is changed |
 | null | 'anchor-changed' | when the anchor property is changed |
-| null | 'color-changed' | when the color property is changed |
-| null | 'opacity-changed' | when the transparency property is changed |

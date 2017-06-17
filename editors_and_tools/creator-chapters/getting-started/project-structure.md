@@ -1,13 +1,13 @@
-# Project structure
+# Project Structure
 
-Using the Dashboard, we can begin by creating a Hello World project. The created project has a specific folder structure. We will learn about the Cocos Creator project in this section.
+Using Dashboard we can create a new project with **Hello World** project template. Let's use the project to learn the structure of a Cocos Creator project.
 
-## Project folder structure
+## Folder Structure
 
-After creating and opening a Cocos Creator project for the first time, you will see the following structure is included in the project folder:
+Your Cocos Creator project should look like this:
 
 ```
-ProjectName(project folder)
+ProjectName（project root）
 ├──assets
 ├──library
 ├──local
@@ -16,36 +16,31 @@ ProjectName(project folder)
 └──project.json
 ```
 
-Next we will introduce the function of each folder.
+Let's see what these folders do:
 
-### Resource folder(assets)
+### Assets
 
-‘assets’
-- Public folders for project collaborators
-  - **assets**
-    Project resource files, including all actual elements used to form a project. Such as:
-    - Scenes
-    - Scripts
-    - Sprites
-    - Textures
-    - Audio files
-    - ...
-    Just think of all of them as loaded resources in the Assets Panel of the [Editor]（/start/editor-overview)
-  - **settings**
-    These are global project settings, which are of a project-level and are shared by all project collaborators, such as:
-    - Plug-in settings
-    - Button settings
-    - Physics settings
-    - ...
-- Private folders used by the current client *(and you should ignore them in version control)*
-  - **library**
-    Files in this folder are for resource library management, and will be used by the [Editor](/manual/start/editor-overview) for library data persistence and resource display.
-  - **local**
-    Local project settings, which store the user's customized settings, such as the Editor layout.
-  - **temp**
-    Temporary files created by the Cocos Creator Engine.
+`assets` contains all art assets, script files and third party modules. Only files in `assets` folder will be shown in **Assets** panel of editor. Once imported to the project, a `.meta` file will be generated for each file in `assets` folder. Meta files are used to store asset setting and their reference to other assets. Some third party project files such as `.tps` from TexturePacker, or `.psd` from Photoshop should be put outside of `assets` since we won't use them directly in our project.
+
+### Library
+
+`library` folder is generated once the project is first opened and imported. In this folder, all assets of the game are renamed with their UUID (universal unique identifier) and will be copied over when the game is published. This folder should be ignored by version control system such as in `.gitignore` file.
+
+If your the content of your `library` is damaged or missing, you can safely delete the `library` folder and reopen the project to re-generate it.
 
 
----
+### Local Settings
 
-Continue on to read about [Support](support.md).
+`local` folder contains all settings that should not be shared across computer. Most of them are personal preferences such as Editor layout, window size and position. You should not use or modify the content of this folder and neither should your version control system.
+
+### Project Settings
+
+`settings` folder contains project related settings such as bundle name, bundle id and target platform settings in **Build** panel. You should keep it under version control so your team can share those settings.
+
+### project.json
+
+`project.json`, along with `assets` folder, are the only two necessary requirements for validating a Cocos Creator project. `project.json` only contains current engine id and local editor extension folder. You should not change the file manually.
+
+### Build Target
+
+A `build` folder will be created once you use main menu `Project->Build...` and publish your game with default build target. If you have built for native platforms, this `build` folder will be very large. So you should not include this folder in version control.

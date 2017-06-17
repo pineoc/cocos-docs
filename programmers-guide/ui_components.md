@@ -252,7 +252,7 @@ As you can see in the above example we specify a _.png_ image for each of the
 possible states the button can be in. A `Button` is made up of 3 graphics that
 might look like this:
 
-![](ui_components-img/Button_Normal.png "") ![](2-img/smallSpacer.png "") ![](ui_components-img/Button_Press.png "") ![](2-img/smallSpacer.png "")
+![](ui_components-img/Button_Normal.png "") ![](basic_concepts-img/smallSpacer.png "") ![](ui_components-img/Button_Press.png "") ![](basic_concepts-img/smallSpacer.png "")
 ![](ui_components-img/Button_Disable.png "")
 
 On screen a `Button` might look like this:
@@ -298,9 +298,9 @@ possible states the `Checkbox` can be in. Since there are 5 possible states that
 a `CheckBox` can be in, it is up 5 graphics, one for each of its states. Example
 graphics:
 
-![](ui_components-img/CheckBox_Normal.png "") ![](2-img/smallSpacer.png "") ![](ui_components-img/CheckBox_Press.png "") ![](2-img/smallSpacer.png "")
-![](ui_components-img/CheckBox_Disable.png "") ![](2-img/smallSpacer.png "")
-![](ui_components-img/CheckBoxNode_Normal.png "") ![](2-img/smallSpacer.png "")
+![](ui_components-img/CheckBox_Normal.png "") ![](basic_concepts-img/smallSpacer.png "") ![](ui_components-img/CheckBox_Press.png "") ![](basic_concepts-img/smallSpacer.png "")
+![](ui_components-img/CheckBox_Disable.png "") ![](basic_concepts-img/smallSpacer.png "")
+![](ui_components-img/CheckBoxNode_Normal.png "") ![](basic_concepts-img/smallSpacer.png "")
 ![](ui_components-img/CheckBoxNode_Disable.png "")
 
 On screen a `Checkbox` might look like this:
@@ -386,8 +386,8 @@ As you can see in the above example we specify a _.png_ image for each of the
 possible states the slider can be in. A `Slider` is made up of 5 graphics that
 might look like this:
 
-![](ui_components-img/Slider_Back.png "") ![](2-img/smallSpacer.png "") ![](ui_components-img/Slider_PressBar.png "") ![](2-img/smallSpacer.png "")
-![](ui_components-img/SliderNode_Normal.png "") ![](2-img/smallSpacer.png "") ![](ui_components-img/SliderNode_Press.png "") ![](2-img/smallSpacer.png "")
+![](ui_components-img/Slider_Back.png "") ![](basic_concepts-img/smallSpacer.png "") ![](ui_components-img/Slider_PressBar.png "") ![](basic_concepts-img/smallSpacer.png "")
+![](ui_components-img/SliderNode_Normal.png "") ![](basic_concepts-img/smallSpacer.png "") ![](ui_components-img/SliderNode_Press.png "") ![](basic_concepts-img/smallSpacer.png "")
 ![](ui_components-img/SliderNode_Disable.png "")
 
 On screen a `Slider` might look like this:

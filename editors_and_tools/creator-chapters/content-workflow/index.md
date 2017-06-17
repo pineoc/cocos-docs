@@ -1,13 +1,14 @@
-# Content creation workflow
+# Scene creation workflow
 
 
 - [Node and Component](node-component.md)
 - [Coordinate system and transformation](transform.md)
-- [Manage node hierarchy and display order](node-tree.md)
+- [Manage node tree and rendering order](node-tree.md)
 - [Create scene image with scene editor](scene-editing.md)
 
-Except for the routine scene elements of editing and creating, we will introduce the other two most important parts in the content creation of the **UI system** and **animation system** in separate chapters:
+Except for basic scene elements creation and editing, we will introduce other important elements of the content creation in seperate chapters:
 
+- [Renderer and Graphics](../render/index.md)
 - [UI system](../ui/index.md)
 - [Animation system](../animation/index.md)
 

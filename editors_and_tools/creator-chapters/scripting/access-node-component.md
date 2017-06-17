@@ -36,10 +36,16 @@ You will get other component in the same node frequently, that is where `getComp
     }
 ```
 
-You can also pass in a class name for the `getComponent`. For user defined components, the class name is simply the filename of the script, and **case sensitive**. For example, if a component declared in "SinRotate.js", its class name will be "SinRotate".
+You can also pass in a class name for the `getComponent`. 
 
 ```js
-    var label = this.getComponent("SinRotate");
+    var label = this.getComponent("cc.Label");
+```
+
+For user defined components, the class name is simply the filename of the script, and **case sensitive**. For example, if a component declared in "SinRotate.js", its class name will be "SinRotate".
+
+```js
+    var rotate = this.getComponent("SinRotate");
 ```
 
 There is also a `getComponent` method on node, they are the same thing.
@@ -50,7 +56,7 @@ There is also a `getComponent` method on node, they are the same thing.
     }
 ```
 
-If the component does not exist in the node, `getComponent` will return null. If you are trying to access a null value at runtime, the "TypeError" exception will be thrown. So always remember to check if you are not sure of it.
+If the component is not exists in the node, `getComponent` will return null. If you are trying to access a null value at runtime, the "TypeError" exception will be thrown. So always remember to check if you are not sure of it.
 
 ```js
     start: function () {
@@ -163,13 +169,11 @@ cc.Class({
     extends: cc.Component,
 
     start: function () {
-        this.cannons = [];
-        this.cannons = this.node.getChildren();
+        var cannons = this.node.children;
+        // ...
     }
 });
 ```
-
-The `getChildren` is the `cc.Node`'s built-in API which returns all children in an array.
 
 You can also use `getChildByName`:
 
@@ -199,7 +203,7 @@ If you already have the reference of a node or component in somewhere, you can a
 
 > You should use global variable with care and understanding, we do not recommend using it, you had better keep them readonly if really need to do that.
 
-Let's define a global object `window.Global`, it will contain two properties, `backNode` and `backLabel`.
+Let's define a global object `window.Global`, it will cantain two properties, `backNode` and `backLabel`.
 
 ```js
 // Globals.js, this file can have any name
@@ -259,7 +263,7 @@ module.exports = {
 };
 ```
 
-You can use `require` + filename(without paths) everywhere to retreive the object exported by "export" from other scripts.
+You can use `require` + filename(without paths) everywhere to retreive the object exported by "exports" from other scripts.
 
 ```js
 // Back.js
@@ -299,4 +303,4 @@ For details, please refer to [Modular script](modular-script.md).
 
 ---
 
-Continue on to read about [Life cycle call-back](life-cycle-callbacks.md).
+Continue on to read about [Basic node and component API](basic-node-api.md).
