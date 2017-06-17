@@ -26,7 +26,7 @@ Cocos2d-js 之所以可以支持被调试，是因为 Cocos2d-js 的 JavaScript 
 2. IDE 连接上 debug 端口后通知游戏在对应的脚本文件中打上断点
 3. IDE 通知游戏运行入口脚本文件
 4. 当游戏运行脚本遇到断点时，会进入 paused 状态，并且通知 IDE
-5. 这个时候 IDE 通过 [远程调试协议][Debugger protocal link] 提供用户各种常见的调试操作
+5. 这个时候 IDE 通过 [远程调试协议][Debugger protocol link] 提供用户各种常见的调试操作
 
 IDE 的额外工作
 ---
@@ -54,6 +54,6 @@ adb shell am start -W apk的包名/apk的启动activity
 [SpiderMonkey link]: https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey
 [SpiderMonkey debugger link]: https://developer.mozilla.org/en-US/docs/Tools/Debugger-API
 [SpiderMonkey debugger doc link]: https://github.com/jimblandy/DebuggerDocs
-[Debugger protocal link]: https://wiki.mozilla.org/Remote_Debugging_Protocol
+[Debugger protocol link]: https://wiki.mozilla.org/Remote_Debugging_Protocol
 [ios-sim link]: https://github.com/phonegap/ios-sim
  

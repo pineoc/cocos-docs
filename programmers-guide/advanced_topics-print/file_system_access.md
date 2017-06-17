@@ -12,7 +12,7 @@ In fact you can use functions in `stdio.h` to access files. But it is not conven
 
 FileUitls is a helper class to access files under `Resources`. Of course, now it addes more functions for other purpose. I will mention it in followling.
 
-Funtions in `FileUtils` can be devided into three categaries:
+Funtions in `FileUtils` can be divided into three categaries:
 
 * functions to read data from a file, such as `getDataFromFile()`
 * functions to manage a file, such as `isFileExist()`
@@ -44,7 +44,7 @@ In order to do multi-resolution adaption, application may use more than one reso
           ...   
 ```
 
-And you want to use correct resources based on resolution. For example, you want to use resources in `ipad` on iPad and use resources in `iphone` on iPhone. Then you can use `FileUtils::setSearchPath()` to set search paths. Engine will search a file according the search paths set by `FileUtils::setSearchPath()`, and the search sequence is the same as the sequence setted:
+And you want to use correct resources based on resolution. For example, you want to use resources in `ipad` on iPad and use resources in `iphone` on iPhone. Then you can use `FileUtils::setSearchPath()` to set search paths. Engine will search a file according the search paths set by `FileUtils::setSearchPath()`, and the search sequence is the same as the sequence set:
 
 ```c++
 vector<std::string> searchPaths;

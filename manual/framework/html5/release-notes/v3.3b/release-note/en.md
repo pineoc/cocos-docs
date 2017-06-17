@@ -14,7 +14,7 @@ One more thing, Facebook Integration for Cocos2d-JS have brought a huge opportun
 
 * Supported Cocos Studio 2.x with its JSON format export, the web engine and native engine share exactly the same parser, so that its result's consistency will be guaranteed for all platforms.
 * Upgraded UI system with the new flow layout system and added full featured test cases.
-* Provided [Cocos Dev Tool](http://h5.cocoachina.com/static/cocos-devtools/) beta version. It's a web based playground for manipulating all coocs nodes in runtime. It will greatly improve your developement and debug experience.
+* Provided [Cocos Dev Tool](http://h5.cocoachina.com/static/cocos-devtools/) beta version. It's a web based playground for manipulating all coocs nodes in runtime. It will greatly improve your development and debug experience.
 
 ![](../../res/devtool.jpg)
 

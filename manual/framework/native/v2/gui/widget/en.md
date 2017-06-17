@@ -17,7 +17,7 @@ We introduced the basic usage of UIButton before to control a display content of
 
 ![uitextbutton](res/uitextbutton.png)
 
-As button, it has to support touch event. Then call `loadTextures` method to load image. Notice the third parameter is the display image when button is unenabled. Let's focus on the fouth parameter, checking out following method's prototype:
+As button, it has to support touch event. Then call `loadTextures` method to load image. Notice the third parameter is the display image when button is unenabled. Let's focus on the fourth parameter, checking out following method's prototype:
 
 `void loadTextures(const char* normal,const char* selected,const char* disabled,TextureResType texType = UI_TEX_TYPE_LOCAL);`
 
@@ -88,7 +88,7 @@ There are two statuses for a checkbox-selected and unselected. It changes its st
 
 ### UISlider
 
-It's a good choice to choose slider if you want to add a widget controling the volume.
+It's a good choice to choose slider if you want to add a widget controlling the volume.
 
 ``` c++
     UISlider* slider = UISlider::create();
@@ -228,7 +228,7 @@ Text Field is a very important widget, it can call device's input system to rece
 
 ![uitextfield](res/uitextfield.png)
 
-Setted properties and enabled touch, then wait user's touch event to done the text input work. `setPlaceHolder` can remind user to input when the widget don't show anything. Notice that the callback functions here have many statuses:
+Set properties and enabled touch, then wait user's touch event to done the text input work. `setPlaceHolder` can remind user to input when the widget don't show anything. Notice that the callback functions here have many statuses:
 
 ``` c++
     void UITextFieldTest::textFieldEvent(Object *pSender, TextFiledEventType type)

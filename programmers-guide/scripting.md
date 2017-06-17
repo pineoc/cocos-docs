@@ -516,7 +516,7 @@ local SubNode = class("SubNode",function()
        return cc.Node:create()
    end)
 
---This function like the construtor of c++ class
+--This function like the constructor of c++ class
 function SubNode:ctor()
 	-- do initialized
 end
@@ -952,7 +952,7 @@ the object pointer got in the upper step
 the object pointer got in the upper step.Note:To destroy an object cited by lua,
 we only called '*ud = NULL;'
 
-Through the above steps,the refernce relationships in the
+Through the above steps,the reference relationships in the
 `toluafix_refid_ptr_mapping`,`tolua_refid_type_mapping` and
 `tolua_refid_type_mapping` table in the registry would be removed, release the
 `userdata` which is created when push c++ object to lua stack, and when lua gc

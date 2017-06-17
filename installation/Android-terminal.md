@@ -91,7 +91,7 @@ Matching Java Virtual Machines (1):
 
 ### Apache Ant
 __Apache Ant__ is another required tool. It is not installed on an OSX system by
-default. It is neccessary to download it using the link above. Using a __binary__
+default. It is necessary to download it using the link above. Using a __binary__
 distribution is fine. There is no need to download the source and compile by hand
 unless this is your preferred method.
 
@@ -106,7 +106,7 @@ export PATH=$ANT_ROOT:$PATH
 
 ### Android NDK and SDK
 Obviously, you need the __Android NDK and SDK__ to do Android development. These 
-are not installed on an OSX system by default. It is neccessary to download it 
+are not installed on an OSX system by default. It is necessary to download it 
 using the link above. 
 
 #### Brew

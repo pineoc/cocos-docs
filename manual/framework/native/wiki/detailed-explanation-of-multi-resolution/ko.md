@@ -17,9 +17,9 @@ Cocos2d-x 2.04 릴리즈 이후로 Cocos2d-x는 다중해상도 지원에 대한
     Director::getInstance()->getOpenGLView()->getFrameSize() 
     //get design resolution
     Director::getInstance()->getWinSize() 
-    //get design resolution’s visable area size
+    //get design resolution’s visible area size
     Director::getInstance()->getVisibleSize() 
-    //get origin of the visable area of design resolution
+    //get origin of the visible area of design resolution
     Director::getInstance()->getVisibleOrigin()
 ```
 ```
@@ -35,9 +35,9 @@ Cocos2d-x 2.04 릴리즈 이후로 Cocos2d-x는 다중해상도 지원에 대한
     cc.Director:getInstance():getOpenGLView():getFrameSize
     --get design resolution
     cc.Director:getInstance():getWinSize
-    --get design resolution’s visable area size
+    --get design resolution’s visible area size
     cc.Director:getInstance():getVisibleSize 
-    --get origin of the visable area of design resolution
+    --get origin of the visible area of design resolution
     cc.Director:getInstance():getVisibleOrigin() 
 ```
 

@@ -117,7 +117,7 @@ the end of the __cocos__ command to specify. Example:
 ```sh
 cocos compile -p android --ap android-22
 ```
-You can always check `project.properties` to see what api-version is being targetted. For 
+You can always check `project.properties` to see what api-version is being targeted. For 
 more info, please read out [Release Notes](https://github.com/cocos2d/cocos2d-x/blob/v3/docs/RELEASE_NOTES.md#cocos-command-modification).
 
 ## Running a project

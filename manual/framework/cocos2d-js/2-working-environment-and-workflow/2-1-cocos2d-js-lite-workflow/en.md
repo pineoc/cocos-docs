@@ -78,7 +78,7 @@ You can use [Google Closure Compiler](https://developers.google.com/closure/comp
 1. Download Closure Compiler's jar app
 2. Configure the build.xml with your own configuration
 3. Run `ant` in the terminal
-4. Replace the embeded js files in HelloWorld.html with the single output file `game.min.js`
+4. Replace the embedded js files in HelloWorld.html with the single output file `game.min.js`
 
 Please be noticed that you can not write any js code in your html file, all js codes should be compressed at the same time, otherwise errors will be triggered.
 

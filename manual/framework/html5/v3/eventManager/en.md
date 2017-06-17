@@ -154,7 +154,7 @@ This new event mechanism removes the event processing logic from the delegate an
 
 1. By using an event listener, a sprite can be added to the event manager with *SceneGraphPriority*. That is, when clicking a sprite button, callback functions will be called in the same order they are drawn in (that is, sprites that are in front of other sprites will get the touch events first).
 2. When dealing with event logical, according to each kind of situations to solve the logics when touched(such as recognize click area, set clicked element as different transparency) to display the click effect.
-3. As `swallowTouches: true,` is setted and some decisions has been made in onTouchBegan to get the return value, whether the display order of the touch event should pass back can be solved.   
+3. As `swallowTouches: true,` is set and some decisions has been made in onTouchBegan to get the return value, whether the display order of the touch event should pass back can be solved.   
 
 ### FixedPriority vs SceneGraphPriority
 

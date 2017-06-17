@@ -1,6 +1,6 @@
 #.api(path, method, params, callback)
 
-调用[Facebook Graph API](http://developers.facebook.com/docs/reference/api/)获取数据，或者根据用户的行为执行某些动作。这个api在用户登陆，获得到access token后几乎总是会被调用；由Acess token编码的[权限](https://developers.facebook.com/docs/facebook-login/permissions/)会决定哪些Graph API是可用的。
+调用[Facebook Graph API](http://developers.facebook.com/docs/reference/api/)获取数据，或者根据用户的行为执行某些动作。这个api在用户登陆，获得到access token后几乎总是会被调用；由Access token编码的[权限](https://developers.facebook.com/docs/facebook-login/permissions/)会决定哪些Graph API是可用的。
 
 ##参数
 

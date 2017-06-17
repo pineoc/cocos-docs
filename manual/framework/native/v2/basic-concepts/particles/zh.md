@@ -95,7 +95,7 @@ Cocos2d-x较早的版本中有两种粒子系统：方块（Quad）粒子系统�
 - lifeVar:
 - angle: 粒子的起始角度
 - angleVar
-- positon: (a CGPoint)
+- position: (a CGPoint)
 - posVar
 - centerOfGravity (a CGPoint)
 

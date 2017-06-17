@@ -128,7 +128,7 @@ Vec2 point = node1->convertToNodeSpace(node2->getPosition());
 #### convertToWorldSpace
 
 `convertToWorldSpace` converts on-node coordinates to SCREEN coordinates. `convertToWorldSpace` will always return SCREEN position of our sprite, might be very useful if you want to capture taps on your sprite but need to move/scale your layer.
-Generally, the parent node call this method with the child node position, return the world’s postion of child’s as a result. It seems make no sense calling this method if the caller isn’t the parent.
+Generally, the parent node call this method with the child node position, return the world’s position of child’s as a result. It seems make no sense calling this method if the caller isn’t the parent.
 
 Example:
 

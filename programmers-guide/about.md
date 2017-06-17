@@ -14,7 +14,7 @@ Why would you want to choose Cocos2d-x over other available game engines?
 
   * Capability to test and debug your game on the desktop and then push it to a
   mobile or desktop target
-  
+
   * A vast API of functionality including sprites, actions, animations, particles,
   transitions, timers, events (touch, keyboard, accelerometer, mouse), sound,
   file IO, persistence, skeletal animations, 3D
@@ -31,7 +31,7 @@ You can clone the [__GitHub Repo__](https://github.com/cocos2d/cocos2d-x) and fo
   C++ support are being added. Read more about [__Cocos Creator__](http://cocos2d-x.org/docs/editors_and_tools/creator/index.html).
 
   * __Cocos Launcher__ - is a graphical tool to create and manage your projects.
-  This is also an easy way to add SDKBOX plugins to your project. [__Documentaion__](http://cocos2d-x.org/docs/cocos/cocos/index.html)
+  This is also an easy way to add SDKBOX plugins to your project. [__Documentation__](http://cocos2d-x.org/docs/cocos/cocos/index.html)
   is available.
 
   * __Coco Studio__ - is EOL'd and has been replaced by __Cocos Creator__. [__Documentation__](http://cocos2d-x.org/docs/deprecated/studio/index.html)

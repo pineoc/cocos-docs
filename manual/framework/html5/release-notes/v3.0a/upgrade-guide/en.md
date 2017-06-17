@@ -58,7 +58,7 @@
 
 * **2.3** Cocos2d module configuration
 
-    Cocos2d-html5 has became a 2d game engine very competitive in almost all aspect of 2d game developement, so we have numerous features in our engine. As a result, our engine is larger than some other simpler html5 game engine. In case you don't need all the features and you want to keep our engine package within a small size, v3.0 have provided you the ability to configure the engine by your own need. All module definitions are in `cocos2d-html5/moduleConfig.json`, you can specify the modules that your game needed in the `modules` parameter of your `project.json`. By default, `cocos2d` is given as value of this parameter, it include all sub modules of Cocos2d-html5, you can change it to a set of specifique sub modules.
+    Cocos2d-html5 has became a 2d game engine very competitive in almost all aspect of 2d game development, so we have numerous features in our engine. As a result, our engine is larger than some other simpler html5 game engine. In case you don't need all the features and you want to keep our engine package within a small size, v3.0 have provided you the ability to configure the engine by your own need. All module definitions are in `cocos2d-html5/moduleConfig.json`, you can specify the modules that your game needed in the `modules` parameter of your `project.json`. By default, `cocos2d` is given as value of this parameter, it include all sub modules of Cocos2d-html5, you can change it to a set of specifique sub modules.
 
     Documentation for [moduleConfig.json](../../../v3.0/moduleconfig-json/en.md)
 
@@ -459,7 +459,7 @@ if (cc.sys.isNative) {
     
     **[New in alpha 2]** The new `addImage` have been synced in JSB.
 
-* **11.5** Two of `MenuItemFont`'s functions have been refactored to fit the standard API sytle:
+* **11.5** Two of `MenuItemFont`'s functions have been refactored to fit the standard API style:
 
     ```
     fontName    --> getFontName

@@ -12,7 +12,7 @@ Release Notes for Cocos2d-html5 v2.1.5
 
 ### Bug Fixes
 
--   Fixed cc.EditBox Dom Element position issue when EGLView is setted
+-   Fixed cc.EditBox Dom Element position issue when EGLView is set
 -   Fixed cc.EGLView adjustSize bug
 -   Fixed the bug of cc.ParticleBatchNode that it doesn’t hide particles after particle life has expired when calling stopSystem()
 -   Fixed a bug that LabelTTF dimension behavior doesn’t support height=0

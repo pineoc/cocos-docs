@@ -230,7 +230,7 @@ build_apk 支持下列参数：
 |CC_USE_EXTRA_FILTERS    |   40KB |  ON | 使用过滤器效果。 |
 
 
-只需要在 `Applicaiton.mk` 中将相应的宏设置为 `0`，然后重新编译就可以得到更小的可执行文件。
+只需要在 `Application.mk` 中将相应的宏设置为 `0`，然后重新编译就可以得到更小的可执行文件。
 
 
 

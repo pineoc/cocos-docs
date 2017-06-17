@@ -130,7 +130,7 @@ Player主要负责创建它自己的box2d世界中的body，当你调用createBo
 		dispatcher->addEventListenerWithSceneGraphPriority(contactListener, this);
 	}
 
-下面的方法是在你鼠标点击模拟器或者手触摸设备屏幕的时候被调用的，也就是touch事件。我们需要把touch坐标点转换成cocos2d的坐标点。然后，我们判断，当单击的点在右半屏幕的时候，就让player往右移动。当单击左半边屏幕的时候，就让player跳起来。可以跳到platfrom上哦，呵呵。如果在下面起跳，会撞到头。这可能不是我们想要的结果。
+下面的方法是在你鼠标点击模拟器或者手触摸设备屏幕的时候被调用的，也就是touch事件。我们需要把touch坐标点转换成cocos2d的坐标点。然后，我们判断，当单击的点在右半屏幕的时候，就让player往右移动。当单击左半边屏幕的时候，就让player跳起来。可以跳到platform上哦，呵呵。如果在下面起跳，会撞到头。这可能不是我们想要的结果。
 
 	bool GameScene::onTouchBegan(Touch *touch, Event *event)
 	{

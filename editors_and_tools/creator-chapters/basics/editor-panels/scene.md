@@ -56,7 +56,7 @@ The core function of **scene editor** is to edit and arrange the visible element
 
 ### Move transform tool
 
-**Move transform tool** is the tranform tool default in activated state when opening the editor. This tool can be activated by clicking the first button on top left corner of main window's tool bar.
+**Move transform tool** is the transform tool default in activated state when opening the editor. This tool can be activated by clicking the first button on top left corner of main window's tool bar.
 
 ![move button](scene/move_button.png)
 
@@ -72,7 +72,7 @@ When the move transform tool is activated:
 - Press green arrow and drag mouse, then the node will be moved on the y axis;
 - Press blue cube and drag mouse, then the node will be moved freely on both the axises.
 
-When the scene editor is activated, press keyboard shortcut <kbd>W</kbd> and you can switch to move tranform tool at any time.
+When the scene editor is activated, press keyboard shortcut <kbd>W</kbd> and you can switch to move transform tool at any time.
 
 ### Rotate transform tool
 
@@ -98,9 +98,9 @@ Click the third button on the tool bar located at main window's top left corner 
 
 All the child nodes will be zoomed in the same ratio with the node.
 
-### Rectangle tranform tool
+### Rectangle transform tool
 
-Click the fourth button on the tool bar located at the main window's top left corner or press the keyboard shortcut <kbd>T</kbd> in scene editor and you can activate **rectangle tranform tool**.
+Click the fourth button on the tool bar located at the main window's top left corner or press the keyboard shortcut <kbd>T</kbd> in scene editor and you can activate **rectangle transform tool**.
 
 ![rect](scene/rect_button.png)
 

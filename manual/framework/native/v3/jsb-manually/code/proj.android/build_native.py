@@ -43,7 +43,7 @@ def do_build(cocos_root, ndk_root, app_android_root):
 
     ndk_path = os.path.join(ndk_root, "ndk-build")
 
-    # windows should use ";" to seperate module paths
+    # windows should use ";" to separate module paths
     platform = sys.platform
     if platform == 'win32':
         ndk_module_path = 'NDK_MODULE_PATH=%s;%s/external;%s/cocos' % (cocos_root, cocos_root, cocos_root)

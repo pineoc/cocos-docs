@@ -29,7 +29,7 @@ Cocos2d-JS是Cocos2d-x的Javascript版本，融合了Cocos2d-html5和Cocos2d-x J
 
 ```
 IvenYangtekiMacBook-Pro-2:cocos2d-js-v3.0 zeroyang$ cocos new CocosJSGame -l js
-Runing command: new
+Running command: new
 > Copy template into /Users/zeroyang/Documents/work/cocos2d-js-v3.0/CocosJSGame
 > Copying cocos2d-html5 files...
 > Copying files from template directory...
@@ -70,7 +70,7 @@ Javascript作为一个解释型的语言，如果直接打包发布，别人可�
 
 ```
 cocos compile -p web -m release
-Runing command: compile
+Running command: compile
 Building mode: release
 running: '/Users/zeroyang/Documents/apache-ant-1.9.3/bin/ant -f /Users/zeroyang/Documents/cocos/CocosJSGame/publish/html5/build.xml'
 
@@ -153,7 +153,7 @@ cocos compile -p android -m release
 
 ```
 IvenYangtekiMacBook-Pro-2:CocosJSGame zeroyang$ cocos compile -p android -m release
-Runing command: compile
+Running command: compile
 Building mode: release
 building native
 The Selected NDK toolchain version was 4.8 !
@@ -198,7 +198,7 @@ cocos compile -p ios -m release
 
 ```
 IvenYangtekiMacBook-Pro-2:CocosJSGame zeroyang$ cocos compile -p ios -m release
-Runing command: compile
+Running command: compile
 Building mode: release
 building
 running: 'xcodebuild -project "/Users/zeroyang/Documents/cocos/CocosJSGame/frameworks/runtime-src/proj.ios_mac/CocosJSGame.xcodeproj" -configuration Release -target "CocosJSGame iOS" -sdk iphonesimulator -arch i386 CONFIGURATION_BUILD_DIR=/Users/zeroyang/Documents/cocos/CocosJSGame/publish/ios'

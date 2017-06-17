@@ -49,7 +49,7 @@ $ cd NEW_PROJECTS_DIR/MyGame
 
 ```
 IvenYangtekiMacBook-Pro-2:Documents zeroyang$ cocos new 2048 -p com.your_company.2048 -l cpp 
-Runing command: new
+Running command: new
 > Copy template into /Users/zeroyang/Documents/2048
 > Copying cocos2d-x files...
 > Rename project name from 'HelloCpp' to '2048'

@@ -63,7 +63,7 @@ With any problems you might have, our communities are happy to help:
 
 Cocos2d-JS have greatly simplified cross platform development. For the next step, we will focus on improving performance on mobile web, toolchain enhancement and completing documentation. Here is a list of main tasks we consider to accomplish in v3.1 :
 
-- The research for performance improvement on Web engine have already made great progress, the new renderer for canvas render mode is ready and will be merged in v3.1. The performance is upto 50% better than v3.0 based on various tests.
+- The research for performance improvement on Web engine have already made great progress, the new renderer for canvas render mode is ready and will be merged in v3.1. The performance is up to 50% better than v3.0 based on various tests.
 - Facebook SDK for Cocos2d-JS will be released with v3.1, developers can use all Facebook features on iOS/Android/Web with the same JavaScript code.
 - Continue the research of memory model in JSB, improve the stability and simplify the usage.
 - Complete the Cocos2d-JS Programming Guide document to cover all important aspects about Cocos2d-JS development.

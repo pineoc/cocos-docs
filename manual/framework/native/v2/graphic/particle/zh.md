@@ -105,7 +105,7 @@ CCParticleBatchNode可以引用且只可以引用1个texture(一个图片文件�
 - lifeVar：
 - angle：(float)。粒子发射时的角度
 - angleVar
-- positon：(CGPoint)
+- position：(CGPoint)
 - posVar
 - centerOfGravity(CGPoint)重力中心点
 
