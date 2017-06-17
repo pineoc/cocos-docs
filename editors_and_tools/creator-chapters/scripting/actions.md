@@ -46,7 +46,7 @@ Basic action can be divided into interval action and free action. Interval actio
 
 ### Container action
 
-The container action can organize actions in different ways, below are several of the container action’s usages:
+The container action can organize actions in different ways, below are several of the container action`s usages:
 
 1. Sequential action `cc.sequence`
     Sequential action makes a series of child actions run one by one in sequence. For example:
@@ -105,28 +105,31 @@ this.jumpAction = cc.sequence(
         cc.moveTo(0.1, 0, 10)
     ),
     cc.spawn(
-        cc.ScaleTo.create(0.2, 1, 1),
-        cc.MoveTo.create(0.2, 0, 0)
+        cc.scaleTo(0.2, 1, 1),
+        cc.moveTo(0.2, 0, 0)
     ),
     cc.delayTime(0.5),
     cc.spawn(
-        cc.ScaleTo.create(0.1, 1.2, 0.8),
-        cc.MoveTo.create(0.1, 0, -10)
+        cc.scaleTo(0.1, 1.2, 0.8),
+        cc.moveTo(0.1, 0, -10)
     ),
     cc.spawn(
-        cc.ScaleTo.create(0.2, 1, 1),
-        cc.MoveTo.create(0.2, 0, 0)
+        cc.scaleTo(0.2, 1, 1),
+        cc.moveTo(0.2, 0, 0)
     )
 // play the animation at 1/2 speed and repeat 5 times
 ).speed(2).repeat(5);
 ```
+
+Note: In cc.callFunc should not stop its own action, because the action can not be immediately deleted, if the action 
+in the callback pause its own action will lead to a series of traversal problems, leading to more serious bug.
 
 ### Slow motion
 
 Slow motion cannot exist alone; it always exists to modify a basic action. It can be used to alter the time curve of the basic action to give the action fast in/out, ease in or other more complicated special effects. One thing we need to note is that only interval actions support slow motion:
 
 ```
-var aciton = cc.scaleTo(0.5, 2, 2);
+var action = cc.scaleTo(0.5, 2, 2);
 action.easing(cc.easeIn(3.0));
 ```
 

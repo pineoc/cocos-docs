@@ -1,4 +1,4 @@
-# Fit scheme for multi-resolution
+# Auto fit for multi-resolution
 
 Cocos Creator is devoted to solving the problem of adapting to screens with various resolutions with one set of resources from the beginning. Generally speaking, we realize the adaptation scheme for multi-resolution through the following technology:
 

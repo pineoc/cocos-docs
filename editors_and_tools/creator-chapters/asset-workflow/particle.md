@@ -6,7 +6,7 @@ Put the Cocos2d-s supported particle `.plist` directly under the project catalog
 ![imported](particle/imported.png)
 
 ## Adding a particle system to the scene
-Method one: drag particle assets directly from **assets** to **Hierarchy**:
+Method one: drag particle assets directly from **assets** to **Node Tree**:
 
 ![drag-to-hierarchy](particle/drag-to-hierarchy.png)
 

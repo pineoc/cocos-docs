@@ -1,4 +1,5 @@
 # Editing an Animation curve
+
 Now, that you have mounted Animation clips to the Node, you can create Animation
 curves in your Animation clips.
 
@@ -11,13 +12,14 @@ For example, in the image above, the position curve is the property path and the
 corresponding blue dots are animation frames.
 
 ## Adding a new property path
+
 The normal method for adding a new property path involves first choosing the Node
-and then clicking __add property__ in the property field. In the pop up menu, all
+and then clicking `add property` in the property field. In the pop up menu, all
 of the addable properties will be listed. Choose the property that you want to add and a corresponding path will be added.
 
 You can also directly modify the corresponding properties of the Node in the recording status.
 Open the recording status, by clicking the red circle in the top left corner and directly drag the chosen Node into the scene editor and an `add property` path will correspondingly be added to the property list and a key frame will be added to the current timeline.
-Also, in the recording status, direct modifications of other properties in the property checker will automatically add the property path and key frame.
+Also, in the recording status, direct modifications of other properties in the Properties will automatically add the property path and key frame.
 
 ## Delete a property path
 Right click the property in the property list and choose the delete option in the pop up menu and the property will be deleted from the animation data.
@@ -41,7 +43,7 @@ You can drag all the chosen Nodes while holding down the left mouse button.
 ## Modify an animation frame
 Click the animation frame that needs to be modified and the selected frame on the
 timeline will jump to this frame. After making sure the recording status is opened,
-you can directly modify the corresponding properties in the property checker.
+you can directly modify the corresponding properties in the Properties.
 
 ## Delete an animation frame
 After choosing a sequence frame, click the ??sign in the property field and the currently selected sequence frame will be deleted. Or directly press the Delete key on the keyboard and all the selected nodes will be deleted.

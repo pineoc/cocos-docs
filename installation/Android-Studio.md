@@ -7,7 +7,7 @@
 
 * Cocos2d-x v3.x [http://cocos2d-x.org/download](http://cocos2d-x.org/download)
 
-* Android Studio 2.1 [https://developer.android.com/studio/index.html](https://developer.android.com/studio/index.html)
+* Android Studio 2.3 [https://developer.android.com/studio/index.html](https://developer.android.com/studio/index.html)
 
 ## Setup
 * unzip the __Android Studio Bundle__
@@ -17,9 +17,31 @@
 ## Compiling `cpp-tests`
 * import the `cpp-tests` project from __cocos2d-x root/tests/cpp-tests/proj.android-studio__
 in __Android Studio__. __Android Studio__ will do everything required. You can run
-`cpp-tests` but clicking on the __play__ button.
+`cpp-tests` by clicking on the __play__ button.
 
     ![](Android-Studio-img/build_cpp_tests.png "")
+    
+## Debugging `cpp-tests`
+
+Since cocos2d-x __v3.15__, you can use __Android Studio 2.3+__ to debug c++ codes:
+
+* set breakpoint by __step 1__
+* run in debug mode by __step 2__
+* you will see stack trace by __step 3__
+
+    ![](Android-Studio-img/debug_cpp_tests.png "")
+    
+## Build for release mode
+
+You have to do a few steps to build release mode:
+
+* change __Build Variant__ to __release__
+* set sign information in __gradle.properties__
+* for __lua projects__, if you want to encrypt lua codes, you should set encrypt information in __gradle.properties__ too
+
+    ![](Android-Studio-img/change_release_lua_tests.png "")
+    
+    ![](Android-Studio-img/sign_and_encrypt.png "")
 
 ## Installing new SDK versions and build tools
 * use the built in __SDK Manager__ to install the __SDK versions__ and __build tools__

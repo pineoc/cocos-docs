@@ -1,26 +1,32 @@
-# 碰撞分组管理
+# Collision Group Management
 
-## 分组管理
-分组管理，需要打开 **项目设置** 面板进行设置，位置为 菜单栏 => 项目 => 项目设置。
+Ideally we want to control which collides with which, to reduce unnecessary collision callbacks (for both performance and gameplay). We can control the collision relationship with **Group Manager** panel.
 
-打开 **项目设置** 面板后，在 **分组管理** 一栏可以看到 **分组列表** 的配置项，如下图   
+This panel has two sections:
+
+## Group List
+
+We use node groups to categorize colliders. Set a group for a node will mark all colliders on this node with this specific group.
+
+Let's select main menu's `Project/Project Settings...` and open **Project Settings** panel.
+
+In the **Group Manager** section we can add new groups or rename existing groups:
 
 <a href="collision-group/group-manager.png"><img src="collision-group/group-manager.png"></a>
 
-点击 **添加分组** 按钮后即可添加一个新的分组，默认会有一个 **Default** 分组。
+**Notice:** groups are indexed with integer, so it's not possible to remove groups, or your nodes may fall into the wrong group once you remove the previous group.
 
-**需要注意的是：分组添加后是不可以删除的，不过你可以任意修改分组的名字**
+## Collision Map
 
-## 碰撞分组配对
+Now that we have some groups to categorize our colliders into. For a platform action game groups such as `player`, `ground`, `enemy`, `bullet` and `item` are very common. Then you'd want to make sure `player` and `enemy` collide with each other, and they both collide with `ground`. Also you don't want `bullet` to collide with `enemy`. So how can we do it?
 
-在 **分组列表** 下面可以进行 **碰撞分组配对** 表的管理，如下图
+In the **Collision Map** section we can control whether collision is allowed for each group with any other groups. The collision map looks like this:
 
 <a href="collision-group/collision-group.png"><img src="collision-group/collision-group.png"></a>
 
-这张表里面的行与列分别列出了 **分组列表** 里面的项，**分组列表** 里的修改将会实时映射到这张表里。   
-你可以在这张表里面配置哪一个分组可以其他的分组进行碰撞检测，假设 **a行 b列** 被勾选上，那么表示 **a行** 上的分组将会与 **b列** 上的分组进行碰撞检测
+Each column and row of this table has all the group listed. If you make modification to the **Group List** this table will be updated accordingly. Each checkbox in the table represent whether the group from the column will collide with the group from the row.
 
-根据上面的规则，在这张表里产生的碰撞对有： 
+So as the checkboxes stated, we have following groups that can collide with each other:   
 
 Platform - Bullet   
 Collider - Collider   
@@ -29,4 +35,4 @@ Actor - Platform
 
 ---
 
-继续前往 [碰撞系统脚本控制](collision-manager.md)
+Go ahead and read [Collision Scripting](collision-manager.md)

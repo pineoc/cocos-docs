@@ -3,7 +3,7 @@ The **Animation **component enables a node and its child node to make an animati
 
 ![animation.png](./animation/animation.png)
 
-Click the `add component` at the bottom of **Inspector** and select `Animation` from `add other components` in order to add the **Animation** component to the node.
+Click the `add component` at the bottom of **Properties** and select `Animation` from `add other components` in order to add the **Animation** component to the node.
 
 
 ## Animation attribute

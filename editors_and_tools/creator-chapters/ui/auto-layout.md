@@ -24,15 +24,15 @@ In the vertical layout type, the Layout component will not modify the position o
 
 ## Node Direction
 
-The Layout arrays' subnodes are based on the display order of subnodes in **arrangement manager** and refers to the array directions set up by the `Vertical Direction` or `Horizontal Direction` properties.
+The Layout arrays' subnodes are based on the display order of subnodes in **Node Tree** and refers to the array directions set up by the `Vertical Direction` or `Horizontal Direction` properties.
 
 ### Horizontal Direction
 
-You can set up two directions:  `Left to Right` or `Right to Left`. The former will array the nodes from left to right according to their display order in **arrangement manager**; the later will array the nodes from right to left according to their display order in **arrangement manager**.
+You can set up two directions:  `Left to Right` or `Right to Left`. The former will array the nodes from left to right according to their display order in **Node Tree**; the later will array the nodes from right to left according to their display order in **Node Tree**.
 
 ### Vertical Direction
 
-You can set up two directions:  `Top to Bottom` or `Bottom to Top`. The former will array the nodes from top to bottom according to their display order in **arrangement manager**; the later will array the nodes from bottom to top according to their display order in **arrangement manager**.
+You can set up two directions:  `Top to Bottom` or `Bottom to Top`. The former will array the nodes from top to bottom according to their display order in **Node Tree**; the later will array the nodes from bottom to top according to their display order in **Node Tree**.
 
 ## Other layout types are coming soon
 

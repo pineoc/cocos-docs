@@ -98,7 +98,7 @@ the event will pass to node b and a from c. For example:
 
 ```javascript
 // In the component script of node c
-this.node.dispatchEvent( new cc.Event('foobar', true) );
+this.node.dispatchEvent( new cc.Event.EventCustom('foobar', true) );
 ```
 
 If we want to stop the event delivery after node b intercepts the event, we can call the function `event.stopPropagation()`
@@ -110,6 +110,8 @@ this.node.on('foobar', function (event) {
   event.stopPropagation();
 });
 ```
+
+Be noted, when you want to dispatch a custom event, please do not use `cc.Event` because it's an abstract class, instead, you should use `cc.Event.EventCustom` to dispatch a custom event.
 
 ## Event object
 
@@ -132,4 +134,7 @@ You can refer to the `cc.Event` and API files of its child category for a comple
 
 ## System built-in event
 
-Above are the general rules for listening to the event and launching the event. Cocos Creator has built in system events like mouse and touch for `cc.Node`. You can refer to [Internal Events](internal-events.md).
+Above are the general rules for listening to events and emitting events. Cocos Creator has built in system events. You can refer to the following documents:
+
+- [Node System Events](./internal-events.md)
+- [Global System Events](./player-controls.md)

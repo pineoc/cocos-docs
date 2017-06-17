@@ -15,6 +15,9 @@ anim.play('test');
 
 // designate test animation to play from 1 second
 anim.play('test', 1);
+
+// when use 'play' interface to play an animation, if there are other animations playing, then will first stop other animations
+anim.play('test2');
 ```
 When playing an animation, Animation will evaluate the former playing state of the animation for next step operation.
 If animation is in:
@@ -26,10 +29,12 @@ If animation is in:
 var anim = this.getComopnent(cc.Animation);
 
 // play the first animation
-anim.play('position-anim');
+anim.playAdditive('position-anim');
 
 // play the second animation
-anim.play('rotation-anim');
+// when use 'playAdditive' interface to play an animation, it will not stop other animations.
+// if there are other animations playing, then will play several animations at the same time.
+anim.playAdditive('rotation-anim');
 ```
 Animation supports playing multiple animations simultaneously. The playing of different animations will not influence the playing state of each other, which is helpful for the creation of some complex animations.
 
@@ -156,10 +161,10 @@ var anim = this.getComopnent(cc.Animation);
 var animState = anim.play('test');
 
 // set the loop mode as Normal
-animState.wrapeMode = cc.WrapMode.Normal;
+animState.wrapMode = cc.WrapMode.Normal;
 
 // set the loop mode as Loop
-animState.wrapeMode = cc.WrapMode.Loop;
+animState.wrapMode = cc.WrapMode.Loop;
 
 // set the loop count of animation as 2 times
 animState.repeatCount = 2;
@@ -196,6 +201,22 @@ cc.Class({
 Add the above components to the **root node** of animation. When animation is about to end, animation system will automatically invoke ```onAnimCompleted``` function in the script.
 Animation system will search in all the components of animation root node. If there is a function that designated to realize animation event in components, then it will be invoked and parameters written in the event will be imported.
 
----
+## Dynamic Create Animation Clip
 
-Continue on to read about [Components](../components/index.md).
+```javascript
+    var animation = this.node.getComponent(cc.Animation);
+    // frames is a SpriteFrame array.
+    var clip = cc.AnimationClip.createWidthSpriteFrame(frames, 17);
+    clip.name = "anim_run";
+    clip.wrapMode = cc.WrapMode.Loop;
+
+    // adds frame event
+    clip.events.push({
+        frame: 1,               // The exactly time in second. It will trigger event at 1s in this example.
+        func: "frameEvent",     // Callback function name
+        params: [1, "hello"]    // Callback parameters
+    });
+
+    animation.addClip(clip);
+    animation.play('anim_run');
+```

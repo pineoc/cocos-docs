@@ -34,8 +34,8 @@ The developer can get to know the basic API for every action type in these actio
 | cc.flipX | X-axis flip | [API description](http://fireball-x.com/api/modules/cc.html#method_flipX) |
 | cc.flipY | Y-axis flip | [API description](http://fireball-x.com/api/modules/cc.html#method_flipY) |
 | cc.place | place at the target location | [API description](http://fireball-x.com/api/modules/cc.html#method_place) |
-| cc.callFunc | execute callback function | [API description](http://fireball-x.com/api/modules/cc.html#method_callFunc) |
-| cc.targetedAction | create action with existent action and a new target node | [API description](http://fireball-x.com/api/modules/cc.html#method_targetedAction) |
+| cc.callFunc | execute callback fuction | [API description](http://fireball-x.com/api/modules/cc.html#method_callFunc) |
+| cc.targetedAction | create action with existant action and a new target node | [API description](http://fireball-x.com/api/modules/cc.html#method_targetedAction) |
 
 ## Interval action
 
